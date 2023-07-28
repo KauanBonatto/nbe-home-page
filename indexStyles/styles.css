@@ -1,0 +1,297 @@
+body{
+	font: 400 15px Lato, sans-serif;
+	line-height: 1.8;
+	color: #818181;
+}
+h2 {
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #303030;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+h4 {
+	font-size: 19px;
+	line-height: 1.375em;
+	color: #303030;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+.jumbotron{
+	background: linear-gradient(#3344ff, #00aaff);
+	color: #fff;
+	padding: 100px 25px;
+	font-family: Montserrat, sans-serif;
+}
+.container-fluid {
+	padding: 60px 50px;
+}
+.bg-grey {
+	background-color: #f6f6f6;
+}
+
+.logo-small {
+	color: #3344ff;
+	font-size: 50px;
+}
+.logo {
+	color: #3344ff;
+	font-size: 200px;
+}
+.social{
+	font-size: 22pt;
+	color: #3344ff;
+	margin: 0px 5px;
+}
+.navbar{
+	margin-bottom: 0;
+	background-color: #3355ff;
+	z-index: 99;
+	border: 0;
+	font-size: 12px !important;
+	line-height: 1.42857143 !important;
+	letter-spacing: 4px;
+	border-radius: 0;
+	font-family: Montserrat, sans-serif;
+}
+.navbar li a, .navbar, .navbar-brand{
+	color: #fff !important;
+}
+.navbar li a:hover, .navbar-nav li.active a{
+	color: #3344ff !important;
+	background-color: #fff !important;
+}
+.navbar-default .navbar-toggle{
+	border-color: transparent;
+	color: #fff !important;
+}
+.navbar-brand{
+	height: 60px;
+	padding: 5px;
+}
+.navbar li a {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.btn-nbe{
+	background-color: #3355ff;
+	border: 1px solid #3355ff;
+	padding: 5px 10px;
+	font-size: 14pt;
+	border-radius: 10px;
+}
+.btn-nbe:hover, .btn-nbe:active, .btn-nbe:visited, .btn-nbe:focus{
+	background-color: #fff;
+	color: #3355ff;
+}
+.slideanim {
+	visibility:hidden;
+}
+.equip{
+	max-width: 208px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+.shadow{
+	box-shadow: 0px 0px 10px #000;
+}
+.border{
+	border: 1px solid #222;
+}
+.slide {
+	animation-name: slide;
+	-webkit-animation-name: slide;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	visibility: visible;
+}
+@keyframes slide {
+	0% {
+		opacity: 0;
+		transform: translateY(70%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+@-webkit-keyframes slide {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(70%);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0%);
+	}
+}
+
+.img{
+	position: relative;
+	width: 100px;
+	max-width: 100px;
+	min-width: 50px;
+	left: 0;
+	cursor: default;
+}
+.divImage{
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    box-shadow: 0px 0px 8px #555;
+    cursor: pointer;
+}
+
+#biosBox{
+    position: fixed;
+    z-index: 98;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    padding-top: 120px;
+    left: 0;
+    top: 0;
+}
+#biosImg{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px 0px 0px 10px;
+    height: 445px;
+}
+.fa-times{
+    font-size: 30px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.fa-times:hover{
+    color: red;
+}
+.widthCem{
+    width: 100%;
+}
+.bg-black{
+    background-color: black;
+}
+.fontSizeDefault{
+    font-size: 22px;
+}
+.fontSize18{
+    font-size: 18px;
+}
+#bio{
+    text-align: justify;
+    line-height: 1.4;
+    padding: 0 20px;
+}
+#personName{
+    color: black;
+}
+#testimonies{
+    padding-bottom: 30px;
+}
+.testimonie{
+    height: 415px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+	.col-sm-4 {
+		text-align: center;
+		margin: 25px 0;
+	}
+	.btn-lg {
+		width: 100%;
+		margin-bottom: 35px;
+	}
+	.img{
+		width: 70px;
+		max-width: 70px;
+		min-width: 50px;
+		left: 10px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.logo {
+		font-size: 150px;
+	}
+	#bio{
+	    padding: 0;
+	}
+	.fontSizeDefault{
+	    font-size: 5vw;
+	}
+	.fontSize18{
+	    font-size: 4vw;
+	}
+	#personName{
+	    font-size: 7vw;
+	}
+	#biosImg{
+	    border-radius: 10px 10px 0px 0px;
+	    height: 265px;
+	    margin: 0;
+	}
+	.testimonie{
+	    height: 245px;
+	}
+}
+/* Login Page Especificly Styles */
+.jumbotronLogin{
+	background: linear-gradient(#3344ff, #00aaff);
+	color: #fff;
+	height: 120vh;
+	padding-bottom: 20px;
+	margin: 0;
+	font-family: Montserrat, sans-serif;
+	padding: 10px;
+}
+.imgLogin{
+	position: relative;
+	width: 50px;
+	left: 0;
+	cursor: default;
+}
+#teachersEle{
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+	.imgLogin{
+		width: 50px;
+		left: 10px;
+	}
+}
+.navbarLogin{
+	margin-bottom: 0;
+	background-color: #fff;
+	z-index: 99;
+	border: 0;
+	font-size: 12px !important;
+	line-height: 1.42857143 !important;
+	letter-spacing: 4px;
+	border-radius: 0;
+	font-family: Montserrat, sans-serif;
+}
+.navbarLogin li, .navbarLogin{
+	color: #223377 !important;
+}
+.navbarLogin li{
+	left: 10px;
+	font-size: 16px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/* SingIn Especificly Styles */
+.g-recaptcha {
+  	transform: scale(1);
+	-webkit-transform: scale(1);
+	transform-origin: 0 0;
+	-webkit-transform-origin: 0 0;
+}

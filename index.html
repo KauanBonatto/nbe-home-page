@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-	<title>NBE English</title>
-	<meta charset="utf-8">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>NBE Inglês</title>
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/vnd.microsoft.icon" href="images/nbe_icon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
@@ -16,167 +17,37 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<!-- Bootstrap js online -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
 	<!-- Local css -->
-	<style>
-		body{
-			font: 400 15px Lato, sans-serif;
-			line-height: 1.8;
-			color: #818181;
-		}
-		h2 {
-			font-size: 24px;
-			text-transform: uppercase;
-			color: #303030;
-			font-weight: 600;
-			margin-bottom: 30px;
-		}
-		h4 {
-			font-size: 19px;
-			line-height: 1.375em;
-			color: #303030;
-			font-weight: 400;
-			margin-bottom: 30px;
-		}
-		.jumbotron{
-			background: linear-gradient(#3344ff, #00aaff);
-			color: #fff;
-			padding: 100px 25px;
-			font-family: Montserrat, sans-serif;
-		}
-		.container-fluid {
-			padding: 60px 50px;
-		}
-		.bg-grey {
-			background-color: #f6f6f6;
-		}
+    <link rel="stylesheet" href="indexStyles/styles.css" type="text/css">
 
-		.logo-small {
-			color: #3344ff;
-			font-size: 50px;
-		}
-		.logo {
-			color: #3344ff;
-			font-size: 200px;
-		}
-		.social{
-			font-size: 22pt;
-			color: #3344ff;
-			margin: 0px 5px;
-		}
-		.navbar{
-			margin-bottom: 0;
-			background-color: #3355ff;
-			z-index: 99;
-			border: 0;
-			font-size: 12px !important;
-			line-height: 1.42857143 !important;
-			letter-spacing: 4px;
-			border-radius: 0;
-			font-family: Montserrat, sans-serif;
-		}
-		.navbar li a, .navbar, .navbar-brand{
-			color: #fff !important;
-		}
-		.navbar li a:hover, .navbar-nav li.active a{
-			color: #3344ff !important;
-			background-color: #fff !important;
-		}
-		.navbar-default .navbar-toggle{
-			border-color: transparent;
-			color: #fff !important;
-		}
-		.navbar-brand{
-			height: 60px;
-			padding: 5px;
-		}
-		.navbar li a {
-			padding-top: 20px;
-			padding-bottom: 20px;
-		}
-		.btn-nbe{
-			background-color: #3355ff;
-			border: 1px solid #3355ff;
-			padding: 5px 10px;
-			font-size: 14pt;
-			border-radius: 10px;
-		}
-		.btn-nbe:hover, .btn-nbe:active, .btn-nbe:visited, .btn-nbe:focus{
-			background-color: #fff;
-			color: #3355ff;
-		}
-		.slideanim {
-			visibility:hidden;
-		}
-		.equip{
-			max-width: 208px;
-			margin: auto;
-			margin-bottom: 20px;
-		}
-		.shadow{
-			box-shadow: 0px 0px 10px #000;
-		}
-		.border{
-			border: 1px solid #222;
-		}
-		.slide {
-			animation-name: slide;
-			-webkit-animation-name: slide;
-			animation-duration: 1s;
-			-webkit-animation-duration: 1s;
-			visibility: visible;
-		}
-		@keyframes slide {
-			0% {
-				opacity: 0;
-				transform: translateY(70%);
-			}
-			100% {
-				opacity: 1;
-				transform: translateY(0%);
-			}
-		}
-		@-webkit-keyframes slide {
-			0% {
-				opacity: 0;
-				-webkit-transform: translateY(70%);
-			}
-			100% {
-				opacity: 1;
-				-webkit-transform: translateY(0%);
-			}
-		}
+	<!-- Global site tag (gtag.js) - Google Ads: 773451000 -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-773451000"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'AW-773451000');
+	</script>
 
-		.img{
-			position: relative;
-			width: 100px;
-			max-width: 100px;
-			min-width: 50px;
-			left: 0;
-			cursor: default;
-		}
+	<!-- Facebook Pixel Code -->
+	<script>
+	  	!function(f,b,e,v,n,t,s)
+	  	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	  	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	  	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	  	n.queue=[];t=b.createElement(e);t.async=!0;
+	  	t.src=v;s=b.getElementsByTagName(e)[0];
+	  	s.parentNode.insertBefore(t,s)}(window, document,'script',
+	  	'https://connect.facebook.net/en_US/fbevents.js');
+	  	fbq('init', '2915347361890047');
+	  	fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	  src="https://www.facebook.com/tr?id=2915347361890047&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Facebook Pixel Code -->
 
-		@media screen and (max-width: 768px) {
-			.col-sm-4 {
-				text-align: center;
-				margin: 25px 0;
-			}
-			.btn-lg {
-				width: 100%;
-				margin-bottom: 35px;
-			}
-			.img{
-				width: 70px;
-				max-width: 70px;
-				min-width: 50px;
-				left: 10px;
-			}
-		}
-		@media screen and (max-width: 480px) {
-			.logo {
-				font-size: 150px;
-			}
-		}
-	</style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
@@ -194,10 +65,11 @@
 	    </div>
 	    <div class="collapse navbar-collapse" id="myNavbar">
 	      <ul class="nav navbar-nav navbar-right">
-	      	<li><a href="logIn.html"><span class="glyphicon glyphicon-log-in"></span> LOGIN</a></li>
+	      	<li><a href="loginNbe.html"><span class="glyphicon glyphicon-log-in"></span> LOGIN</a></li>
 	        <li><a href="#about">SOBRE</a></li>
-	        <li><a href="#equip">EQUIPE</a></li>
 	        <li><a href="#courses">CURSOS</a></li>
+	        <li><a href="#equip">EQUIPE</a></li>
+	        <li><a href="#testimonies">DEPOIMENTOS</a></li>
 	        <li><a href="#contact">CONTATO</a></li>
 	      </ul>
 	    </div>
@@ -207,7 +79,7 @@
 	<div class="jumbotron text-center" id="home">
 		<h1>NBE</h1>
 		<p>Aprenda inglês na sua velocidade</p>
-		<button class="btn btn-nbe" onclick="redirect('sigIn.html');">Inscreva-se</button>
+		<button class="btn btn-nbe" onclick="redirect('singUpNbe.html');">Inscreva-se</button>
 	</div>
 
 	<!-- Container (About Section) -->
@@ -218,7 +90,7 @@
 				<h4>A NBE é uma escola que distingue de todas as demais por ter um método pedagógico totalmente inovador, baseado em experiências acadêmicas americana.</h4><br>
 
 				<p>Com tutoria de um pedagogo norte-americano, as aulas são ministradas numa turma com no máximo 8 alunos, organizados num formato diferenciado para que a mesma ocorra de maneira totalmente interativa e produtiva.<br>Na NBE prioriza-se principalmente com a fluência do aluno, a qual é alcançada na velocidade do próprio. A escola entende que cada aluno possui suas particularidades, e portanto, respeita o limite de cada aluno.</p><br>
-				<button class="btn btn-default btn-lg">Saiba mais</button>
+				<button class="btn btn-default btn-lg hidden">Saiba mais</button>
 			</div>
 			<div class="col-sm-4">
 				<span class="glyphicon glyphicon-globe logo"></span>
@@ -242,16 +114,8 @@
 		</div>
 	</div>
 
-	<!-- Container (Equip Section) -->
-	<div id="equip" class="container-fluid">
-		<div class="text-center">
-			<h2>EQUIPE</h2>
-			<h4>Conheça a equipe NBE</h4>
-		</div>
-	</div>
-
 	<!-- Container (Courses Section) -->
-	<div id="courses" class="container-fluid text-center bg-grey">
+	<div id="courses" class="container-fluid text-center">
 		<h2>Cursos</h2>
 		<h4>Veja os cursos disponiveis na NBE e começe já</h4>
 		<br>
@@ -273,6 +137,110 @@
 			</div>
 		</div>
 	</div>
+	
+	
+	<!-- Container (Equip Section) -->
+	
+	<div id="biosBox" class="container-fluid text-center bg-grey">
+	    <div class="row" style="background-color: white;box-shadow: 0px 0px 10px #444;border-radius: 10px;">
+	        <div id="biosImg" class="col-sm-4">
+	            <div class="widthCem container text-right visible-xs" onclick="document.getElementById('biosBox').style.display='none';"><i class="fas fa-times"></i></div>
+	        </div>
+            <div class="col-sm-8">
+                <div class="widthCem container text-right hidden-xs" onclick="document.getElementById('biosBox').style.display='none';"><i class="fas fa-times"></i></div>
+                <h1 id="personName"></h1>
+                <br>
+                <p id="bio" class="fontSizeDefault"></p>
+            </div>
+	    </div>
+	</div>
+	
+	<div id="equip" class="container-fluid text-center bg-grey">
+		<h2>Equipe</h2>
+		<h4>Conheça a equipe da NBE</h4>
+		<br>
+		<div class="row slideanim">
+			<div class="col-sm-4" style="margin-bottom: 50px">
+				<!--img src="images/dan.jpeg" width="150" height="150" class="img-circle"-->
+				<div onclick="displayBios('images/dan.jpeg')" class="img-circle divImage" style="background-image: url('images/dan.jpeg');"></div>
+				<h4 style="margin-bottom: 10px">Denilson Porto</h4>
+				<p>Proprietário</p>
+			</div>
+			<div class="col-sm-4" style="margin-bottom: 50px">
+				<!--img src="images/ana.jpeg" width="150" height="150" class="img-circle"-->
+				<div onclick="displayBios('images/ana.jpeg')" class="img-circle divImage" style="background-image: url('images/ana.jpeg');"></div>
+				<h4 style="margin-bottom: 10px">Ana Carolina</h4>
+				<p>Gerente</p>
+			</div>
+			<div class="col-sm-4" style="margin-bottom: 50px">
+				<!--img src="images/kauan.jpg" width="150" height="150" class="img-circle"-->
+				<div onclick="displayBios('images/kauan.jpg')" class="img-circle divImage" style="background-image: url('images/kauan.jpg');"></div>
+				<h4 style="margin-bottom: 10px">Kauan Bonatto</h4>
+				<p>Programador</p>
+			</div>
+		</div>
+		
+		<div class="row slideanim">
+		    <div class="col-sm-4" style="margin-bottom: 50px">
+				<!--img src="images/luam.jpeg" width="150" height="150" class="img-circle"-->
+				<div onclick="displayBios('images/luam.jpeg')" class="img-circle divImage" style="background-image: url('images/luam.jpeg');"></div>
+				<h4 style="margin-bottom: 10px">Luan Aguiar</h4>
+				<p>Professor</p>
+			</div>
+			<div class="col-sm-4" style="margin-bottom: 50px">
+				<!--img src="images/sidney.jpg" width="150" height="150" class="img-circle"-->
+				<div onclick="displayBios('images/sidney.jpg')" class="img-circle divImage" style="background-image: url('images/sidney.jpg');"></div>
+				<h4 style="margin-bottom: 10px">Sidney</h4>
+				<p>Professor</p>
+			</div>
+			<div class="col-sm-4" style="margin-bottom: 50px">
+				<!--img src="images/sandro.jpeg" width="150" height="150" class="img-circle"-->
+				<div onclick="displayBios('images/sandro.jpeg')" class="img-circle divImage" style="background-image: url('images/sandro.jpeg');background-position: top;"></div>
+				<h4 style="margin-bottom: 10px">Sandro</h4>
+				<p>Professor</p>
+			</div>
+		</div>
+		
+		<div class="row slideanim">
+		    <div class="col-sm-4">
+		        <div onclick="displayBios('images/gabriel.png')" class="img-circle divImage" style="background-image: url('images/gabriel.png');"></div>
+				<h4 style="margin-bottom: 10px">Gabriel</h4>
+				<p>Consultor de Marketing</p>
+		    </div>
+		</div>
+		
+	</div>
+	
+	<!-- Container (Testimonies Section) -->
+	<div id="testimonies" class="container-fluid">
+	    <h2 class="text-center">DEPOIMENTOS</h2>
+	    <h4 class="text-center">Veja a declaração de alguns alunos sobre nossa escola</h4>
+	    <br>
+		<div class="row">
+		    <div class="col-sm-4">
+		        <iframe class="testimonie" width="100%" src="https://www.youtube.com/embed/XeymJfRsjd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		    </div>
+		    <div class="col-sm-4">
+		        <iframe class="testimonie" width="100%" src="https://www.youtube.com/embed/5B2j2WPFQRQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		    </div>
+		    <div class="col-sm-4">
+		        <iframe class="testimonie" width="100%" src="https://www.youtube.com/embed/bz4LfyHqoOE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		    </div>
+		</div>
+		
+		<div class="row">
+		    <div class="col-sm-4">
+		        <iframe class="testimonie" width="100%" src="https://www.youtube.com/embed/ViE8-GpU45c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		    </div>
+		    <div class="col-sm-4">
+		        <iframe class="testimonie" width="100%" src="https://www.youtube.com/embed/B_RBBYaNHUc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		    </div>
+		    <div class="col-sm-4">
+		        <iframe class="testimonie" width="100%" src="https://www.youtube.com/embed/thJBZSz0RJA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		    </div>
+		</div>
+	</div>
+	
 
 	<!-- Container (Contact Section) -->
 	<div id="contact" class="container-fluid">
@@ -285,7 +253,7 @@
 				<p><span class="glyphicon glyphicon-phone"></span> +55 73 9 9973-1746</p>
 				<p><span class="glyphicon glyphicon-envelope"></span> nbeingles@gmail.com</p>				
 			</div>
-			<form class="col-sm-7 slideanim" action="sendMessage.php" method="POST">
+			<form class="col-sm-7 slideanim" action="../New NBE/sendMessage.php" method="POST">
 				<div class="row">
 					<div class="col-sm-6 form-group">
 						<input class="form-control" id="name" type="text" name="name" placeholder="Nome" required>
@@ -296,7 +264,7 @@
 				</div>
 				<input class="form-control" id="email" type="email" name="email" placeholder="Email">
 				<br>
-				<textarea class="form-control" id="comments" name="comments" placeholder="Escreva aqui a sua mensagem" rows="5"></textarea>
+				<textarea class="form-control" id="comments" name="comments" placeholder="Escreva aki sua mensagem" rows="5"></textarea>
 				<br>
 				<div class="row">
 					<div class="col-sm-12 form-group">
@@ -313,8 +281,8 @@
 		<a href="#home" title="Início">
 			<span class="glyphicon glyphicon-chevron-up"></span>
 		</a>
-		<p>Created by <a href="https://github.com/KauanBonatto">Kauan Bonatto</a></p>
-		<p><span>&copy</span> Todos os direitos reservados</p>
+		<p>Created by <a href="https://www.instagram.com/kauanbonatto/">Kauan Bonatto</a></p>
+		<p><span>&copy;</span> Todos os direitos reservados</p>
 		<div class="row">
 			<div class="col-sm-12">
 				<a href="https://www.instagram.com/nbeoficial/" target="_blank" style="text-decoration: none;">
@@ -365,7 +333,11 @@
 	</script>
 
 	<script>
-		/* Image logo animation effect */
+	
+        var bios = document.getElementById("biosBox");
+        bios.style.display = "none";
+        
+		/* Image logoNbe animation effect */
 		var prevScrollpos = window.pageYOffset;
 		var imgNbe = document.getElementById("img-nbe");
 
@@ -383,6 +355,54 @@
 		function redirect(url){
 			window.open(url);
 		}
+		var bioMessage;
+		function displayBios(imageUrl){
+		    var bio;
+		    document.getElementById("bio").classList.remove("fontSize18");
+		       if(imageUrl == 'images/dan.jpeg'){
+		           bio = "Denilson Porto";
+		           document.getElementById("bio").classList.remove("fontSizeDefault");
+		           document.getElementById("bio").classList.add("fontSize18");
+		           document.getElementById("bio").classList.add("fontSizeDefault");
+		           bioMessage = "- Denilson nasceu em São Paulo e foi para os Estados Unidos com 6 anos de idade. La ele terminou o ensino médio e ingressou na marinha americana como paramédico de combate. Durante seu tempo na marinha ele começou seus estudos na faculdade de ciência da computação. Por conta de todos seus deveres militares ele constantemente tinha que mudar de faculdades. Estudou em 5 faculdades diferentes abordando estudos de computação, matemática, psicologia educacional entre outros. Após ter passado por 4 faculdades diferentes ele finalmente decidiu terminar seu curso EAD na Ashford University em Ciências Sociais com ênfase na Educação. <br><br>- Sua experiência educacional deixou claro a importância do casamento entre a tecnologia e educação, então usando teorias mais atuais de educação decidiu montar seu próprio curso utilizando o melhor das aulas presencias e virtuais.⁣";
+		       }
+		       else if(imageUrl == 'images/ana.jpeg'){
+		           bio = "Ana Carolina";
+		           bioMessage = "- Ana Carolina é técnico em administração e universitária cursando letras inglês na UNEB.<br><br>⁣- Estudava na NBE, e relata que com apenas 20 anos teve a grande oportunidade de estar hoje trabalhando conosco e na suas duas áreas.<br><br>⁣- Ana Carolina faz parte da família NBE, somos mais do que uma escola, We are a team.⁣";
+		       }
+		       else if(imageUrl == 'images/kauan.jpg'){
+		           bio = "Kauan Bonatto";
+		           bioMessage = "";
+		           
+		       }
+		       else if(imageUrl == 'images/luam.jpeg'){
+		           bio = "Luan Aguiar";
+		           bioMessage = "- Em primeiro momento, Luan era um aluno bolsista que participou de um concurso dentro da plataforma virtual da NBE, conquistando o primeiro lugar e garantindo a opotunidade de se tornar bilíngue.<br><br>- O seu esforço foi recompensado ao atingir a fluência em um período de sete meses á partir do zero!<br><br>Atualmente, O menino prodígio é grato pelos três anos junto com a NBE.⁣";
+		       }
+		       else if(imageUrl == 'images/sidney.jpg'){
+		           bio = "Sidney Lopes";
+		           bioMessage = "";
+		       }
+		       else if(imageUrl == 'images/sandro.jpeg'){
+		           bio = "Sandro";
+		           bioMessage = "- Sandro, atualmente estuda Direito, e descobriu na NBE sua paixão pelas línguas estrangeiras.<br><br>- Ele sempre amou o inglês, desde criança queria fazer um curso, mas só começou a estudá-lo na adolescência.<br><br>- Quando começou o seu curso na NBE se destacou, sendo o primeiro estudante a atingir a fluência em menos de 1 ano, resultado que ele atingiu em 9 meses.⁣";
+		       }
+		       else if(imageUrl == 'images/gabriel.png'){
+		           bio = "Gabriel";
+		            document.getElementById("bio").classList.remove("fontSizeDefault");
+		           document.getElementById("bio").classList.add("fontSize18");
+		           document.getElementById("bio").classList.add("fontSizeDefault");
+		           bioMessage = "- Gabriel nasceu em Teixeira de Freitas e sempre foi do setor comercial / Vendas.<br> Hoje é especialista em marketing digital, certificado por empresas como Resultados Digitais e Rock Content. <br><br>- Enquanto estava no ensino médio, trabalhou na NBE como estagiário de informática por 6 meses, antes de começar a carreira de marketing.<br><br>- Depois de muitos anos, voltou para a NBE e apresentou a sua empresa, a agência alastro, como uma possível parceira de marketing.<br><br>- Desde então, Gabriel tem ajudado a equipe da escola a encontrar caminhos lucrativos e de resultados, com consultorias de vendas e serviços de marketing, prestados pela agência alastro";
+		       }
+		       else{
+		           alert("Não foi possivel realizar esta operação reinicie a página e tente novamente");
+		       }
+		       document.getElementById("biosImg").style.backgroundImage = "url('"+imageUrl+"')";
+		       bios.style.display = "block";
+		       document.getElementById("personName").innerHTML = bio;
+		       document.getElementById("bio").innerHTML = bioMessage;
+		}
+
 	</script>
 
 </body>
