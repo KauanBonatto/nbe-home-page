@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>NBE English</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/vnd.microsoft.icon" href="images/nbe_icon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+
+	<!-- Font Awasome Icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<!-- Bootstrap css online -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!-- jQuery online -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Bootstrap js online -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<!-- Local css -->
+	<style>
+		body{
+			font: 400 15px Lato, sans-serif;
+			line-height: 1.8;
+			color: #818181;
+		}
+		h2 {
+			font-size: 24px;
+			text-transform: uppercase;
+			color: #303030;
+			font-weight: 600;
+			margin-bottom: 30px;
+		}
+		h4 {
+			font-size: 19px;
+			line-height: 1.375em;
+			color: #303030;
+			font-weight: 400;
+			margin-bottom: 30px;
+		}
+		.jumbotron{
+			background: linear-gradient(#3344ff, #00aaff);
+			color: #fff;
+			padding: 100px 25px;
+			font-family: Montserrat, sans-serif;
+		}
+		.container-fluid {
+			padding: 60px 50px;
+		}
+		.bg-grey {
+			background-color: #f6f6f6;
+		}
+
+		.logo-small {
+			color: #3344ff;
+			font-size: 50px;
+		}
+		.logo {
+			color: #3344ff;
+			font-size: 200px;
+		}
+		.social{
+			font-size: 22pt;
+			color: #3344ff;
+			margin: 0px 5px;
+		}
+		.navbar{
+			margin-bottom: 0;
+			background-color: #3355ff;
+			z-index: 99;
+			border: 0;
+			font-size: 12px !important;
+			line-height: 1.42857143 !important;
+			letter-spacing: 4px;
+			border-radius: 0;
+			font-family: Montserrat, sans-serif;
+		}
+		.navbar li a, .navbar, .navbar-brand{
+			color: #fff !important;
+		}
+		.navbar li a:hover, .navbar-nav li.active a{
+			color: #3344ff !important;
+			background-color: #fff !important;
+		}
+		.navbar-default .navbar-toggle{
+			border-color: transparent;
+			color: #fff !important;
+		}
+		.navbar-brand{
+			height: 60px;
+			padding: 5px;
+		}
+		.navbar li a {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		.btn-nbe{
+			background-color: #3355ff;
+			border: 1px solid #3355ff;
+			padding: 5px 10px;
+			font-size: 14pt;
+			border-radius: 10px;
+		}
+		.btn-nbe:hover, .btn-nbe:active, .btn-nbe:visited, .btn-nbe:focus{
+			background-color: #fff;
+			color: #3355ff;
+		}
+		.slideanim {
+			visibility:hidden;
+		}
+		.equip{
+			max-width: 208px;
+			margin: auto;
+			margin-bottom: 20px;
+		}
+		.shadow{
+			box-shadow: 0px 0px 10px #000;
+		}
+		.border{
+			border: 1px solid #222;
+		}
+		.slide {
+			animation-name: slide;
+			-webkit-animation-name: slide;
+			animation-duration: 1s;
+			-webkit-animation-duration: 1s;
+			visibility: visible;
+		}
+		@keyframes slide {
+			0% {
+				opacity: 0;
+				transform: translateY(70%);
+			}
+			100% {
+				opacity: 1;
+				transform: translateY(0%);
+			}
+		}
+		@-webkit-keyframes slide {
+			0% {
+				opacity: 0;
+				-webkit-transform: translateY(70%);
+			}
+			100% {
+				opacity: 1;
+				-webkit-transform: translateY(0%);
+			}
+		}
+
+		.img{
+			position: relative;
+			width: 100px;
+			max-width: 100px;
+			min-width: 50px;
+			left: 0;
+			cursor: default;
+		}
+
+		@media screen and (max-width: 768px) {
+			.col-sm-4 {
+				text-align: center;
+				margin: 25px 0;
+			}
+			.btn-lg {
+				width: 100%;
+				margin-bottom: 35px;
+			}
+			.img{
+				width: 70px;
+				max-width: 70px;
+				min-width: 50px;
+				left: 10px;
+			}
+		}
+		@media screen and (max-width: 480px) {
+			.logo {
+				font-size: 150px;
+			}
+		}
+	</style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	      <a class="navbar-brand" href="#myPage">
+	      	<img id="img-nbe" src="images/nbelogo.png" class="img-rounded img">
+	      </a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="logIn.html"><span class="glyphicon glyphicon-log-in"></span> LOGIN</a></li>
+	        <li><a href="#about">SOBRE</a></li>
+	        <li><a href="#equip">EQUIPE</a></li>
+	        <li><a href="#courses">CURSOS</a></li>
+	        <li><a href="#contact">CONTATO</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+	<div class="jumbotron text-center" id="home">
+		<h1>NBE</h1>
+		<p>Aprenda inglês na sua velocidade</p>
+		<button class="btn btn-nbe" onclick="redirect('sigIn.html');">Inscreva-se</button>
+	</div>
+
+	<!-- Container (About Section) -->
+	<div id="about" class="container-fluid">
+		<div class="row">
+			<div class="col-sm-8">
+				<h2>A NBE</h2><br>
+				<h4>A NBE é uma escola que distingue de todas as demais por ter um método pedagógico totalmente inovador, baseado em experiências acadêmicas americana.</h4><br>
+
+				<p>Com tutoria de um pedagogo norte-americano, as aulas são ministradas numa turma com no máximo 8 alunos, organizados num formato diferenciado para que a mesma ocorra de maneira totalmente interativa e produtiva.<br>Na NBE prioriza-se principalmente com a fluência do aluno, a qual é alcançada na velocidade do próprio. A escola entende que cada aluno possui suas particularidades, e portanto, respeita o limite de cada aluno.</p><br>
+				<button class="btn btn-default btn-lg">Saiba mais</button>
+			</div>
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-globe logo"></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid bg-grey">
+		<div class="row">
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-book logo slideanim"></span>
+			</div>
+			<div class="col-sm-8">
+				<h2>O RAPID CYCLE</h2>
+				<h4>Um ciclo de aprendizagem baseado nas teorias de psicopedagogia mais atuais.</h4>
+				<p><strong>VISUALIZE:</strong> É possível uma maior facilidade de fixação do vocabulário devido as sugestões de vídeos, series e filmes com áudio legendas em inglês.</p>
+				<p><strong>ASSOCIE:</strong> Na plataforma virtual usa-se o vocabulário em um contexto para reforçar a fixação.</p>
+				<p><strong>RACIONALIZE:</strong> Na aula presencial é colocado em prática de forma bem didática tudo que foi visto no site levando o aluno a raciocinar em inglês aumentando desta forma seu contado com a língua.</p>
+				<p><strong>PERSONALIZE:</strong> Em sala usa-se o vocabulário já aprendido para narrar sua própria rotina diária, bem como outras narrativas obtidas através de filmes, séries, vídeos totalmente em inglês.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Container (Equip Section) -->
+	<div id="equip" class="container-fluid">
+		<div class="text-center">
+			<h2>EQUIPE</h2>
+			<h4>Conheça a equipe NBE</h4>
+		</div>
+	</div>
+
+	<!-- Container (Courses Section) -->
+	<div id="courses" class="container-fluid text-center bg-grey">
+		<h2>Cursos</h2>
+		<h4>Veja os cursos disponiveis na NBE e começe já</h4>
+		<br>
+		<div class="row slideanim">
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-flag logo-small"></span>
+				<h4>Inglês</h4>
+				<p>Seje fluênte em apenas 2 anos</p>
+			</div>
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-phone logo-small"></span>
+				<h4>Programação Web</h4>
+				<p>Aprenda HTML, CSS, JavaScript, PHP e muito mais</p>
+			</div>
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-education logo-small"></span>
+				<h4>Pscicologia Educacional</h4>
+				<p>Potencialize seus ensinamentos e seus estudos</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Container (Contact Section) -->
+	<div id="contact" class="container-fluid">
+		<h2 class="text-center">CONTATO</h2>
+		<br>
+		<div class="row">
+			<div class="col-sm-5">
+				<p>Entre em contato conosco, você será respondido em até 24 horas</p>
+				<p><span class="glyphicon glyphicon-map-marker"></span> R. Tomé de Souza, Número 126 - Centro, Teixeira de Freitas - BA</p>
+				<p><span class="glyphicon glyphicon-phone"></span> +55 73 9 9973-1746</p>
+				<p><span class="glyphicon glyphicon-envelope"></span> nbeingles@gmail.com</p>				
+			</div>
+			<form class="col-sm-7 slideanim" action="sendMessage.php" method="POST">
+				<div class="row">
+					<div class="col-sm-6 form-group">
+						<input class="form-control" id="name" type="text" name="name" placeholder="Nome" required>
+					</div>
+					<div class="col-sm-6 form-group">
+						<input class="form-control" id="phone" type="text" name="phone" placeholder="Telefone">
+					</div>
+				</div>
+				<input class="form-control" id="email" type="email" name="email" placeholder="Email">
+				<br>
+				<textarea class="form-control" id="comments" name="comments" placeholder="Escreva aqui a sua mensagem" rows="5"></textarea>
+				<br>
+				<div class="row">
+					<div class="col-sm-12 form-group">
+						<button class="btn btn-default pull-right" type="submit">Enviar</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.383719238686!2d-39.74666548512166!3d-17.53690838798912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7354518f5e688f9%3A0x5d733d50133573d2!2sNBE%20Ingl%C3%AAs!5e0!3m2!1spt-BR!2sbr!4v1570830521828!5m2!1spt-BR!2sbr" width="80%" height="380" frameborder="0" style="border: solid 2px #555;box-shadow: 0px 0px 10px #000; border-radius: 10px; margin: -20px 10% 50px 10%;" allowfullscreen=""></iframe>
+
+	<footer class="container-fluid text-center bg-grey slideanim">
+		<a href="#home" title="Início">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+		</a>
+		<p>Created by <a href="https://github.com/KauanBonatto">Kauan Bonatto</a></p>
+		<p><span>&copy</span> Todos os direitos reservados</p>
+		<div class="row">
+			<div class="col-sm-12">
+				<a href="https://www.instagram.com/nbeoficial/" target="_blank" style="text-decoration: none;">
+					<i class="fab fa-instagram social"></i>
+				</a>
+				<a href="https://www.facebook.com/nbeoficial/" target="_blank" style="text-decoration: none;">
+					<i class="fab fa-facebook-square social"></i>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links in navbar + footer link
+	  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
+
+	      // Store hash
+	      var hash = this.hash;
+
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 900, function(){
+	   
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    } // End if
+	  });
+	  
+	  $(window).scroll(function() {
+	    $(".slideanim").each(function(){
+	      var pos = $(this).offset().top;
+
+	      var winTop = $(window).scrollTop();
+	        if (pos < winTop + 600) {
+	          $(this).addClass("slide");
+	        }
+	    });
+	  });
+	})
+	</script>
+
+	<script>
+		/* Image logo animation effect */
+		var prevScrollpos = window.pageYOffset;
+		var imgNbe = document.getElementById("img-nbe");
+
+		window.onscroll = function() {
+		  var currentScrollPos = window.pageYOffset;
+			if (currentScrollPos < 150) {
+				var operation = currentScrollPos/4;
+				imgNbe.style.width = 100-operation+"px";
+			}
+			else {
+				imgNbe.style.width = "50px";
+			}
+		}
+
+		function redirect(url){
+			window.open(url);
+		}
+	</script>
+
+</body>
+</html>
